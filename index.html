@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Rescue Adoption Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero-container">
+            <img src="./cat-3336579_1280.jpg", alt="Animal Rescue Logo"> 
+            <h1>Welcome to Animal Rescue</h1>
+            
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Adoption Application Form</h2>
+            <form id="adoptionForm" onsubmit="validateForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+                <label for="homeStatus">Current Home Status (with kids, pets, etc.):</label>
+                <textarea id="homeStatus" rows="4" required></textarea>
+                <label for="residenceType">Residence Type (Apartment, House):</label>
+                <input type="text" id="residenceType" required>
+                <label for="fence">Is there a fence?</label>
+                <select id="fence" required>
+                    <option value="">Select one</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <!-- Add any other necessary questions here -->
+                <button type="submit">Submit</button>
+            </form>
+            <div id="errorMessages"></div>
+        </div>
+       
+    </main>
+    <footer>
+        <div class="container">
+            <p> &copy; R&L 2024 Animal Rescue. Designend by Suleman Seid.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
